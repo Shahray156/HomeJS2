@@ -72,10 +72,10 @@ if (meaning % 2 == 0) {
 
 // 8.
 
-let clientOS = 1 || 0;
-if (clientOS === 1) {
+let clientOS = prompt("Вы используете Android или iOS?")
+if (clientOS == "Android") {
     alert("Установите версию приложения для Android по ссылке");
- } else if (clientOS === 0) {
+ } else if (clientOS == "iOS") {
     alert("Установите версию приложения для iOS по ссылке");
  } else {
     alert("Error");
@@ -85,12 +85,12 @@ if (clientOS === 1) {
 // 9.
 
 let clientDeviceYear = 2015;
-let device = 1 || 0;
+let device = prompt ("Вы используете Android или iOS?");
 
-if (device === 1 && clientDeviceYear < 2015) {
+if (device == "Android"  && clientDeviceYear < 2015) {
     alert("Установите облегченную версию приложения для Android по ссылке");
 }
-    if (device === 0 && clientDeviceYear < 2015) {
+    if (device == "iOS" && clientDeviceYear <= 2015) {
        alert("Установите облегченную версию приложения для iOS по ссылке");
     } else {
         alert("Можете установить последнюю версию по ссылке");
