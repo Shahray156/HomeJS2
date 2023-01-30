@@ -27,9 +27,9 @@ if (d > 100 || e > 100) {
 
 // 4.
 
-let a = '2';
-let b = '3';
-alert(Number (a + b));
+let a = "2";
+let b = "3";
+alert(Number (a) + Number (b));
 
 //5.
 
@@ -73,9 +73,9 @@ if (meaning % 2 == 0) {
 // 8.
 
 let clientOS = 1 || 0;
-if (clientOS = 1) {
+if (clientOS === 1) {
     alert("Установите версию приложения для Android по ссылке");
- } else if (clientOS = 0) {
+ } else if (clientOS === 0) {
     alert("Установите версию приложения для iOS по ссылке");
  } else {
     alert("Error");
@@ -87,10 +87,10 @@ if (clientOS = 1) {
 let clientDeviceYear = 2015;
 let device = 1 || 0;
 
-if (device = 1 && clientDeviceYear < 2015) {
+if (device === 1 && clientDeviceYear < 2015) {
     alert("Установите облегченную версию приложения для Android по ссылке");
 }
-    if (device = 0 && clientDeviceYear < 2015) {
+    if (device === 0 && clientDeviceYear < 2015) {
        alert("Установите облегченную версию приложения для iOS по ссылке");
     } else {
         alert("Можете установить последнюю версию по ссылке");
